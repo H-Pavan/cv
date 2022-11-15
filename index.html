@@ -2,25 +2,62 @@
   <head>
     <meta charset="utf-8" />
     <title>Pavan Personal Info</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href=".\hobbies.html">My Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".\contact.html">Contact Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              href="#"
+              >Projects</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="projects\dice\index.html"
+                  >Dice</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="projects\drum\index.html"
+                  >Drum</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <table cellspacing="20">
       <tr>
         <td>
-          <img
-            src="Images\Photo-modified.png"
-          />
+          <img src="Images\Photo-modified.png" />
         </td>
         <td>
           <h1>Pavan H</h1>
           <p>
             <em
               >I am a
-              <strong
-                ><a href="https://www.naukri.com/software-developer-jobs"
-                  >Software Developer</a
-                ></strong
+              <strong>
+                <!-- <a href="https://www.naukri.com/software-developer-jobs"> -->
+                Software Developer
+                <!-- </a> --> </strong
               >.</em
             >
           </p>
@@ -67,43 +104,34 @@
           <td>CSS</td>
         </tr>
       </tbody>
-    </table>      
+    </table>
     <hr />
     <h3>Skills</h3>
     <table cellspacing="10">
-     <tr>
-      <td>
-         <table>
-          <tr>
-           <td>HTML</td>
-           <td>&#9733&#9733&#9733&#9733&#9733</td>
-          </tr>
-          <tr>
-           <td>NodeJS</td>
-           <td>&#9733&#9733&#9733&#9733&#9734</td>
-         </tr>
-         </table>
-      </td>
-      <td>
-       <table>   
-        <tr>
-        <td>JavaScript</td>
-        <td>&#9733&#9733&#9733&#9733&#9733</td>
-        </tr>
-        <tr>
-        <td>CSS</td>
-        <td>&#9733&#9733&#9733&#9733&#9733</td>
-        </tr>
-        </table>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>HTML</td>
+            </tr>
+            <tr>
+              <td>NodeJS</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>JavaScript</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
-    
-       
-    <a href=".\My Hobbies.html"
-      >My Hobbies</a
-    >
-    <hr />
-    <a href=".\Contact Me.html"
-      >Contact Me</a
-    >
   </body>
+
+  <script src="index.js"></script>
 </html>
