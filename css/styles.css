@@ -1,12 +1,24 @@
 body {
-  background-color: E3F8FF;
+  background-color: #e3f8ff;
+}
+
+nav {
+  background-color: rgb(74, 120, 160);
+}
+
+.dropdown-menu {
+  background-color: rgb(107, 166, 218);
+}
+
+.dropdown-item:hover {
+  background-color: rgb(39, 95, 145);
 }
 
 hr {
-  border-style: dotted none none none;
-  border-width: 5px;
-  border-color: black;
-  width: 50%;
+  border: dotted #0b1010 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 10px auto;
 }
 
 h1 {
@@ -14,4 +26,11 @@ h1 {
 }
 h3 {
   color: #f37878;
+}
+
+.Work,
+.Work tr,
+.Work td,
+.Work th {
+  border: 1px solid black;
 }

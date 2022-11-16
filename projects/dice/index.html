@@ -3,33 +3,46 @@
   <head>
     <meta charset="utf-8" />
     <title>Dicee</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Refresh Me</h1>
-
-      <div class="dice">
-        <p>Player 1</p>
-        <img
-          class="img1"
-          src="C:\Pavan\DOM\Dicee Challenge - Starting Files\images\dice6.png"
-        />
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="../../index.html">Home</a>
       </div>
+      <div class="container">
+        <h1>Roll to see winner</h1>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img
-          class="img2"
-          src="C:\Pavan\DOM\Dicee Challenge - Starting Files\images\dice6.png"
-        />
+        <div class="dice">
+          <p>Player 1</p>
+          <img
+            class="img1"
+            src="C:\Pavan\DOM\Dicee Challenge - Starting Files\images\dice6.png"
+          />
+        </div>
+
+        <div class="dice">
+          <p>Player 2</p>
+          <img
+            class="img2"
+            src="C:\Pavan\DOM\Dicee Challenge - Starting Files\images\dice6.png"
+          />
+        </div>
       </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <button onclick="roll()">Roll</button>
+      <button onclick="window.location.reload()">Reset</button>
     </div>
   </body>
   <script src="index.js"></script>
-  <footer>www 🎲 App Brewery 🎲 com</footer>
 </html>

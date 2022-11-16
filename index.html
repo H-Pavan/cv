@@ -2,27 +2,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Pavan Personal Info</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm fixed-top mb-2 pt-0 pb-0">
       <div class="container-fluid">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href=".\hobbies.html">My Hobbies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=".\contact.html">Contact Me</a>
-          </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle fw-bolder"
               role="button"
               data-bs-toggle="dropdown"
               href="#"
@@ -30,67 +25,113 @@
             >
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="projects\dice\index.html"
+                <a class="dropdown-item" href="projects/dice/index.html"
                   >Dice</a
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="projects\drum\index.html"
+                <a class="dropdown-item" href="projects/drum/index.html"
                   >Drum</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="projects/tingdog/index.html"
+                  >Ting Dog</a
                 >
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <em
+              ><strong
+                ><a class="nav-link" href="#Education">Education</a></strong
+              ></em
+            >
+          </li>
+          <li class="nav-item">
+            <em
+              ><strong><a class="nav-link" href="#Work">Work</a></strong></em
+            >
+          </li>
+          <li class="nav-item">
+            <em
+              ><strong
+                ><a class="nav-link" href="#Skills">Skills</a></strong
+              ></em
+            >
+          </li>
+          <li class="nav-item">
+            <em
+              ><strong
+                ><a class="nav-link" href="#Hobbies">Hobbies</a></strong
+              ></em
+            >
+          </li>
+          <li class="nav-item">
+            <em
+              ><strong
+                ><a class="nav-link" href="#Contact">Contact</a></strong
+              ></em
+            >
+          </li>
         </ul>
       </div>
     </nav>
-    <table cellspacing="20">
-      <tr>
-        <td>
-          <img src="Images\Photo-modified.png" />
-        </td>
-        <td>
-          <h1>Pavan H</h1>
-          <p>
-            <em
-              >I am a
-              <strong>
-                <!-- <a href="https://www.naukri.com/software-developer-jobs"> -->
-                Software Developer
-                <!-- </a> --> </strong
-              >.</em
-            >
-          </p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h3>Education</h3>
-    <li>BE</li>
-    <ul>
-      <li>Mechanical Engineering</li>
-      <li>College:KSSEM</li>
-      <li>CGPA:7.05</li>
-    </ul>
-    <li>PUC</li>
-    <ul>
-      <li>PCMCs</li>
-      <li>College: National College,Jayanagar</li>
-      <li>Percentage:63.5</li>
-    </ul>
-    <li>SSLC</li>
-    <ul>
-      <li>School: Holy Spirit School</li>
-      <li>Percentage:74</li>
-    </ul>
-    <hr />
-    <h3>Work Expirence</h3>
-    <table>
-      <thead>
-        <th>Dates</th>
-        <th>Work</th>
-      </thead>
-      <tbody>
+    <div class="container-fluid">
+      <div class="row">
+        <table cellspacing="20" class="mt-5 mb-5">
+          <tr>
+            <td>
+              <img src="Images\Photo-modified.png" />
+            </td>
+            <td>
+              <h1>Pavan H</h1>
+              <p>
+                <em> <strong> Software Developer </strong></em>
+              </p>
+              <p>
+                To get an opportunity that allows me to showcase my skills and
+                contribute to the company's growth.<br />
+                To enhance my skills by taking on this challenging position and
+                expanding my knowledge. <br />To seek a position in a company
+                that can launch my career and help me to build a stronger skill
+                set.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <div id="Education">
+        <h3>Education</h3>
+        <ol>
+          <li>BE</li>
+          <ul>
+            <li>Mechanical Engineering</li>
+            <li>College:KSSEM</li>
+            <li>CGPA:7.05</li>
+          </ul>
+          <li>PUC</li>
+          <ul>
+            <li>PCMCs</li>
+            <li>College: National College,Jayanagar</li>
+            <li>Percentage:63.5</li>
+          </ul>
+          <li>SSLC</li>
+          <ul>
+            <li>School: Holy Spirit School</li>
+            <li>Percentage:74</li>
+          </ul>
+        </ol>
+      </div>
+      <hr />
+
+      <h3 id="Work">Work Expirence</h3>
+      <table class="Work" style="width: 15%">
+        <tr>
+          <th>Dates</th>
+          <th>Work</th>
+        </tr>
         <tr>
           <td>2022</td>
           <td>JavaScript</td>
@@ -103,34 +144,40 @@
           <td>2022</td>
           <td>CSS</td>
         </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <table>
-            <tr>
-              <td>HTML</td>
-            </tr>
-            <tr>
-              <td>NodeJS</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table>
-            <tr>
-              <td>JavaScript</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+        <tr>
+          <td>2022</td>
+          <td>Bootstrap</td>
+        </tr>
+      </table>
+      <hr />
+      <h3 id="Skills">Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>NodeJS</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+      </ul>
+      <hr />
+      <h3 id="Hobbies">Hobbies</h3>
+      <ol>
+        <li>Reading Books</li>
+        <li>Games</li>
+        <ul>
+          <li>Batmiton</li>
+          <li>Cricket</li>
+        </ul>
+      </ol>
+      <hr />
+      <h3 id="Contact">Contact</h3>
+      <ol>
+        <li>Phone No: 9341458669</li>
+        <li>Email: pavanh253@gmail.com</li>
+        <li>
+          Address: #706, Bachchegowda Layout, Gollahalli, Anjanapura,
+          Bangalore-560108
+        </li>
+      </ol>
+    </div>
   </body>
 
   <script src="index.js"></script>
